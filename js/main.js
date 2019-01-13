@@ -4,7 +4,21 @@ const saber = document.querySelector(".container");
 const overflow = document.querySelector(".overflow");
 const GREEN = "#2ecc71";
 const RED = "#d91e18";
+const audio = document.querySelector("audio");
 
+
+var myShakeEvent = new Shake({
+    threshold: 15, // optional shake strength threshold
+    timeout: 1000 // optional, determines the frequency of event generation
+});
+myShakeEvent.start();
+
+function shakeEventDidOccur () {
+  audio.play()
+  alert('shake!');
+};
+
+window.addEventListener('shake', shakeEventDidOccur, false);
 
 jedi.addEventListener("click", () => {
   saber.style.background = GREEN;
