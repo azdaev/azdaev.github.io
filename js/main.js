@@ -4,12 +4,12 @@ const saber = document.querySelector(".container");
 const overflow = document.querySelector(".overflow");
 const GREEN = "#2ecc71";
 const RED = "#d91e18";
-const audio = document.querySelector("audio");
+const audio = document.querySelector("#sound");
 
-
-var myShakeEvent = new Shake({
+const myShakeEvent = new Shake({
     threshold: 15
 });
+
 myShakeEvent.start();
 
 window.addEventListener('shake', shakeEventDidOccur, false);
