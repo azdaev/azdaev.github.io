@@ -1,0 +1,22 @@
+#fibonacciClick {
+    text-decoration: none;
+    font-size: 2em;
+}
+
+#FibHead {
+    margin-top: 2em;
+
+    p {
+        font-size: 1.8em;
+        font-family: Hack;
+    }
+
+    button {
+        font-size: 1.2em;
+        margin-top: 10px;
+
+        @media(max-width:405px) {
+            font-size: 1em;
+        }
+    }
+}
