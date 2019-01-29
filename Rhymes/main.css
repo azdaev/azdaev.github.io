@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700");
+* {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.container {
+  padding: 20px;
+  margin: 20px;
+}
+
+.container h1 {
+  color: white;
+  letter-spacing: 3px;
+  opacity: 0.96;
+  text-align: center;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+@media (max-width: 450px) {
+  input {
+    width: 300px;
+  }
+}
+
+#amount {
+  width: 80px;
+  text-align: center;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 2px;
+  opacity: 0.96;
+  text-align: center;
+}
+
+#heading {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+}
+
+#result {
+  letter-spacing: 3px;
+  opacity: 0.96;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 2em;
+  max-width: 700px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  width: 170px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 1.7em;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+  display: block;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+#resCont {
+  background-color: white;
+  max-width: 700px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 10px;
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

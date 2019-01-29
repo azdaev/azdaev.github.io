@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rhymes</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+        <h1 id="heading">РИФМОПЛЕТ</h1>
+        <div class="container">
+            <h1>Введи окончание</h1>
+            <div class="textContainer">
+                <input type="text" name="rhyme" id="rhyme">
+                <h1>Сколько слов максимум?</h1>
+                <input type="number" name="amount" id="amount">
+            </div><br>
+            <button id="btn">Узнать</button>
+            <div id="resCont">
+                <p id="result"></p>
+            </div>
+        </div>
+    <script src="https://fastcdn.org/Underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="text.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
