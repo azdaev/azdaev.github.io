@@ -18,10 +18,14 @@ h1 {
 }
 
 .container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 50px);
+  -ms-grid-columns: (50px)[3];
+      grid-template-columns: repeat(3, 50px);
   grid-gap: 1px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 2em;
 }
 
@@ -82,3 +86,4 @@ p {
   text-align: center;
   font-family: 'Montserrat';
 }
+/*# sourceMappingURL=main.css.map */

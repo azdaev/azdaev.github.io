@@ -15,5 +15,7 @@ button.addEventListener('click', () =>
 copy.addEventListener('click', function () {
   p.select();
   document.execCommand('copy');
-  this.innerText = "Copied"
+  document.getSelection().removeAllRanges();
+  this.innerText = "Copied";
+  setTimeout(() => {this.innerText = "Copy"}, 5000);
 });

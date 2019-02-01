@@ -14,7 +14,6 @@ let reversedWord;
 button.addEventListener('click', () => {
     matchingWords = [];
     finalWords = [];
-    console.log("clicked");
     // input reversed
     reversedValue = endingField.value.split("").reverse().join("");
     // search for endings (val <2 is too small)
@@ -28,6 +27,7 @@ button.addEventListener('click', () => {
                 matchingWords = _.uniq(matchingWords);
                 if (matchingWords.length <= parseInt(amountField.value)) {
                     for (let n = 0; n <= parseInt(amountField.value); n++) {
+                        finalWords = [];
                         finalWords.push(matchingWords[Math.floor(Math.random() * matchingWords.length)]);
                         finalWords = _.uniq(finalWords);
                     }
