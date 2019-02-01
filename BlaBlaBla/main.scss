@@ -15,7 +15,7 @@ html {
 }
 
 header {
-    background: rgb(30, 30, 30);
+    background: url('/bg.jpg');
     margin: 0;
     padding: 0;
     color: white;
@@ -27,18 +27,20 @@ header {
         margin: 0;
         padding-top: 1em;
         text-align: center;
-        font-weight: 800; 
+        font-weight: 800;
         font-size: 4em;
     }
-
+    
     p {
+        color: rgba(0,0,0,0.6);
         max-width: 800px;
         text-align: center;
         margin: 0 auto;
         padding: 3em;
         line-height: 35px;
         font-size: 1.5em;
-        @media screen and (max-width: 570px){
+
+        @media screen and (max-width: 570px) {
             font-size: 1.2em;
             line-height: 30px;
             padding: 1em;
@@ -49,9 +51,16 @@ header {
 
 main {
     text-align: center;
+
     #name {
         margin-top: 1em;
+        color: rgba(0,0,0,0.75)
     }
+
+    p {
+        color: rgba(0, 0, 0, 0.75)
+    }
+
     textarea {
         display: block;
         margin: 0 auto;
@@ -66,30 +75,37 @@ main {
         resize: none;
         border: none;
         background-color: rgb(236, 236, 236);
+
         &:focus {
-            box-shadow: 0 0 25px rgba(0,0,0,0.3);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
             transform: scale(1.1);
             background: white;
-                    @media screen and (max-width: 400px) {
-                        transform: scale(1.05);
-                    }
+
+            @media screen and (max-width: 400px) {
+                transform: scale(1.05);
+            }
 
         }
-        @media screen and (max-width: 1100px){
-            max-width: 300px;
-            max-height: 100px;
+
+        @media screen and (min-width: 1400px) {
+            max-width: 400px;
+            max-height: 200px;
         }
-        @media screen and (max-width: 400px){
+
+        @media screen and (max-width: 1400px) {
             max-width: 250px;
             max-height: 100px;
         }
+
     }
+
     .container {
         display: block;
         grid-template-columns: 1fr 1fr;
         margin: 0 auto;
         max-width: 70vw;
-        @media screen and (max-width: 750px) {
+
+        @media screen and (max-width: 900px) {
             grid-template-columns: 1fr;
             max-width: 100vw;
         }
@@ -109,7 +125,8 @@ main {
         margin-top: 10px;
         cursor: pointer;
         transition: 0.2s;
-        &:hover{
+
+        &:hover {
             background-color: rgba(80, 143, 80, 0.725);
         }
     }
@@ -126,16 +143,17 @@ footer {
         padding: 0;
         font-size: 2.2em;
         font-weight: lighter
-        
     }
+
     h6 {
         margin: 0;
         padding-top: 5px;
         font-size: 1.4em;
         font-weight: normal;
     }
-    hr{
+
+    hr {
         border-top: 1px solid black;
     }
-    
+
 }

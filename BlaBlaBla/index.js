@@ -11,7 +11,7 @@ button.addEventListener('click', () => {
     if (inField.value) {
         container.style.display = "grid";
         outField.style.display = "block";
-        text = inField.value.split(" ");
+        text = inField.value.replace('-', ' ').replace('.', ' ').replace(',', ' ').split(" ");
         for (let n = 0; n < text.length; n++){
             if (text[n].length >=4) {
                 text[n] = replace(text[n]); 
