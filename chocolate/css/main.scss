@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+
+html {
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+body {
+    font-family: 'Montserrat';
+
+    .img-header {
+        background-image: url(../img/header.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 470px;
+        padding-top: 5em
+    }
+
+    .heading {
+        color: white;
+        text-align: center;
+        text-transform: uppercase
+    }
+
+}
+
+.icons {
+    width: 3em;
+    max-width: 10em;
+    text-align: center;
+
+    i {
+        font-size: 1.5em
+    }
+
+}
+
+.carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+
+    @media screen and(max-width: $break-md) {
+        height: 72vh;
+    }
+}
+
+#Carousel {
+    margin: 0 auto;
+
+    @media screen and(max-width: $break-xl) {
+        width: 90vw;
+    }
+
+    @media screen and(max-width: $break-md) {
+        width: 90vw;
+    }
+}
+
+.jumbotron {
+    background-color: white;
+
+    h1 {
+        font-size: 4.5em;
+
+        @media screen and(max-width: $break-md) {
+            font-size: 2em;
+        }
+    }
+}
+
+#hincar {
+    @media screen and(max-width: $break-md) {
+        font-size: 0.2em;
+    }
+}
+
+
+#icontexts {
+    font-family: 'Montserrat';
+    font-size: 0.5em;
+}
+
+#contacts {
+    button {
+        margin-top: 20px;
+    }
+}
+
+#generator {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+
+}
+
+.cards {
+    width: 100px;
+    height: 40px;
+    // border: 1px solid #ced4da;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #eaeaea;
+    display: grid;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    @media (max-width: 370px){
+        width: 90px
+    }
+
+    &:hover {
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+
+    }
+
+    input {
+        display: none;
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}
