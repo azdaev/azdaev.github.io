@@ -1,0 +1,149 @@
+* {
+    font-family: 'Montserrat',
+        sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+#background {
+    background-image: url(img/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 9.6vw;
+
+    @media screen and(max-width: 500px) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2)rgba(0, 0, 0, 0.7)), url(img/3.jpg);
+    }
+}
+
+.container {
+    float: right;
+    padding-top: 20vh;
+
+    @media screen and (max-width: 700px) {
+        float: none;
+    }
+}
+
+.heading {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+#description {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+#whatAmI {
+    color: white;
+    margin: 0;
+}
+
+#arrow {
+    display: block;
+    max-width: 100px;
+    margin: 0 auto;
+    color: white;
+    font-size: 7em;
+    text-align: center;
+    margin-top: -1.5em;
+    padding-bottom: 35px;
+    transform: rotate(90deg);
+}
+
+.insta {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.85);
+    margin-top: 70px;
+
+    @media screen and(max-width: 510px) {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+}
+
+#instafeed {
+    padding: 20px;
+    display: grid;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 2em;
+    justify-items: center;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+#insta-href {
+    margin-bottom: 2em;
+    display: flex;
+    margin-top: 60px;
+    background-color: white;
+    padding: 14px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 10px 21px -4px rgba(0, 0, 0, 0.31);
+    transition: 0.3s;
+
+    &:hover{
+        background-color: rgba(246, 246, 246, 0.8);
+        transform: translateY(-5px)
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.85);
+    }
+}
+
+footer{
+    background-color: #414141;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s !important;
+    a{
+        display: block;
+        font-size: 2em;
+
+        i{
+            border-radius: 100%;
+            padding: 10px;
+            margin: 20px;
+            background-color: #fff;
+
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+
+.fa-instagram{
+    transform: scaleX(1.1)
+}
+
+.fa-vk {
+    transform: scaleX(1);
+}
+
+.fa-envelope-square {
+    transform: scaleX(1.1);
+}
