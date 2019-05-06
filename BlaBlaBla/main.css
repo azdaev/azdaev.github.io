@@ -17,6 +17,8 @@ html * {
 
 header {
   background: url("/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
   color: white;
