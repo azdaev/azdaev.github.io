@@ -19,9 +19,16 @@ body {
 }
 
 .container h1 {
-  font-size: 3.3vw;
+  font-size: 3.3rem;
   opacity: 0.2;
   max-width: 650px;
+}
+
+@media screen and (max-width: 800px) {
+  .container h1 {
+    font-size: 2rem;
+    max-width: 300px;
+  }
 }
 
 .container button {
@@ -44,9 +51,16 @@ body {
 }
 
 .container p {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   opacity: 0.6;
   text-align: right;
   font-style: italic;
+}
+
+@media screen and (max-width: 800px) {
+  .container p {
+    font-size: 1rem;
+    max-width: 300px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
