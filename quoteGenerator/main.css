@@ -1,0 +1,52 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  height: 80vh;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container h1 {
+  font-size: 3.3vw;
+  opacity: 0.2;
+  max-width: 650px;
+}
+
+.container button {
+  max-width: 300px;
+  display: block;
+  margin: 10px auto;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.container button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+}
+
+.container p {
+  font-size: 1.5vw;
+  opacity: 0.6;
+  text-align: right;
+  font-style: italic;
+}
+/*# sourceMappingURL=main.css.map */
