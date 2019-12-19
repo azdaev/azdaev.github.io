@@ -5,18 +5,17 @@ body {
   min-height: calc(100vh - 100px);
   margin: 50px;
   background-attachment: fixed;
-  letter-spacing: -1px;
 }
 
 * {
-  font-family: "Montserrat";
+  font-family: "Roboto";
   transition: 0.3s;
 }
 
 .myName {
   h1 {
     color: white;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 700;
     text-align: center;
 
@@ -46,7 +45,7 @@ body {
 
   a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.85);
+    color: rgba(0, 0, 0, 0.8);
     text-align: center;
   }
 
