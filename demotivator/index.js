@@ -19,7 +19,7 @@ fileInput.addEventListener('change', (event) => {
 })
 
 button.addEventListener('click', () => {
-    html2canvas(document.querySelector("#meme_picture")).then(canvas => {
+    html2canvas(document.querySelector("#meme_picture"), {allowTaint : true}).then(canvas => {
     document.body.innerHTML = '';
     document.body.appendChild(canvas)
   })
