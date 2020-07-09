@@ -21,13 +21,9 @@ new Vue({
             this.tasks = this.tasks.filter(c => c.id != id)
             this.saveTasks()
         },
-        saveTasks(){
+        saveTasks() {
             const parsed = JSON.stringify(this.tasks)
             localStorage.setItem('tasks', parsed)
-        },
-        clearList(){
-            this.tasks = []
-            this.saveTasks()
         }
     },
     mounted() {
