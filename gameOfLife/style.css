@@ -1,0 +1,28 @@
+body{
+    background-color: rgba(0,0,0,0.8);
+}
+
+#world {
+    padding-bottom: 10px;
+}
+table {
+    background-color: transparent;
+    margin: 0 auto;
+}
+td {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+}
+
+td.dead {
+    background-color: transparent;
+}
+td.alive {
+    background-color: white;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+}
