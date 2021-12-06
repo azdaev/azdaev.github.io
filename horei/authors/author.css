@@ -1,0 +1,53 @@
+    .container {
+        display: grid;
+        place-items: center;
+    }
+
+    .face {
+        width: clamp(120px, 300px, 350px);
+        display: block;
+        margin-top: 2.441rem;
+        margin-inline: 2.441rem;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    }
+
+    .name {
+        text-align: center;
+        margin-top: 2.441rem;
+        font-size: 3.815rem;
+        color: var(--dark-color);
+    }
+
+    .poems {
+        display: grid;
+        place-items: center;
+        gap: 1rem;
+        margin-top: 2.441rem;
+        color: var(--dark-color);
+        margin-bottom: 2.441rem;
+    }
+
+    .poems li {
+        list-style-type: none;
+
+    }
+
+    .poems li a {
+        font-size: 1.25rem;
+        color: var(--dark-color);
+    }
+
+    .poem {
+        margin-top: 2.441rem;
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin-bottom: 2.441rem;
+    }
+
+    @media only screen and (max-width: 600px){
+        .name{
+            font-size: 2.441rem;
+            margin-top: 1rem;
+        }
+    }

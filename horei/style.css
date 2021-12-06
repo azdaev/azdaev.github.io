@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times new roman";
+}
+
+:root {
+    --dark-color: rgb(40, 40, 40);
+    --gray-color: rgb(90, 90, 90);
+}
+
+/* Main */
+
+.big {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.7)), url('bgbig.jpg'), lightskyblue;
+    color: white;
+    background-size: cover;
+    text-align: center;
+}
+
+.big h1 {
+    font-size: 9.313rem;
+    padding-top: 20vh;
+}
+
+#quote {
+    margin-top: 1.25rem;
+    font-size: 1.953rem;
+    margin-inline: auto;
+    max-width: 400px;
+}
+
+#quoteAuthor{
+    color: rgba(255,255,255,0.8);
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .big h1 {
+        font-size: 5.96rem;
+    }
+    
+    #quote {
+        font-size: 1.25rem;
+        padding-inline: 1.25rem;
+    }
+}
+
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    gap: 3.052rem;
+    max-width: 1000px;
+    margin: 4.768rem auto;
+    padding-inline: 4.768rem;
+}
+
+.categories div{
+    min-height: 200px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.categories a {
+    margin: 15rem 2rem 2rem 2rem;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    max-width: 100px;
+    margin-inline: auto;
+    text-align: center;
+    color: var(--dark-color);
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid black;
+}
+
+.categories a:hover{
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.authors{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 1) 70%),
+    url("authors.jpg");
+    background-size: cover;
+}
+
+.subjects{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 1) 70%),
+    url("subjects.jpg");
+    background-size: cover;
+}
+
+.random{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 1) 70%),
+    url("last.jpg");
+    background-size: cover;
+}
+
+.title{
+    text-align: center;
+    color: var(--dark-color);
+    margin-top: 4.768rem;
+    font-size: 3.815rem
+}

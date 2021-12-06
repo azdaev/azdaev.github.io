@@ -1,0 +1,20 @@
+#lubov {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 1) 70%),
+        url("lubov.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#zhizn {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 1) 70%),
+        url("zhizn.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#voyna {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 1) 70%),
+        url("voyna.jpg");
+    background-size: cover;
+    background-position: center;
+}

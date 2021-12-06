@@ -1,0 +1,30 @@
+#pushkin{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 1) 70%),
+    url("pushkin.jpg");
+    background-size: cover;
+}
+#lermontov{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 1) 70%),
+    url("lermontov.jpg");
+    background-size: cover;
+}
+#tolstoy{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 1) 70%),
+    url("tolstoy.jpg");
+    background-size: cover;
+}
+#chekhov{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 1) 70%),
+    url("chekhov.jpg");
+    background-size: cover;
+}
+#akhmatova {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 1) 70%),
+    url("akhmatova.jpg");
+    background-size: cover;
+}
+#esenin {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 65%, rgba(255, 255, 255, 1) 70%),
+    url("esenin.jpg");
+    background-size: cover;
+}
